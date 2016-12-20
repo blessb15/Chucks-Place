@@ -7,18 +7,48 @@ a {
   text-decoration: none;
   color: black; }
 
+@font-face {
+  font-family: MR;
+  src: url("../fonts/Montserrat-Regular.ttf"); }
 .nav-bar {
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 2;
+  font-family: MR;
+  background-color: #888888;
   color: blue;
-  width: 185px;
+  width: 15%;
   height: 100%;
   background-color: lightgray;
   text-align: center; }
   .nav-bar .nav-logo {
-    margin-top: 20px;
+    margin-top: 15px;
     display: inline-block;
     width: 150px; }
 
 .nav-home-link p {
   margin-top: 45px; }
+
+.home-page {
+  width: 85%;
+  height: 100%;
+  left: 15%;
+  position: absolute;
+  text-align: center; }
+
+.home-header-text {
+  z-index: 5;
+  font-family: MR;
+  font-size: 70px;
+  color: white;
+  padding-top: 7%; }
+
+.home-header-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/chucksinside1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40%; }
 
 /*# sourceMappingURL=sass.css.map */
