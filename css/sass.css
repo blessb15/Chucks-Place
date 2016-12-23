@@ -7,6 +7,9 @@ a {
   text-decoration: none;
   color: black; }
 
+.active {
+  color: #f03235; }
+
 @font-face {
   font-family: MR;
   src: url("../fonts/Montserrat-Bold.ttf"); }
@@ -35,31 +38,25 @@ a {
 
 .nav-link {
   font-family: MR;
-  font-size: 90%;
+  font-size: 20px;
   display: inline-block;
-  padding-right: 70px; }
+  padding-right: 70px;
+  cursor: pointer; }
 
 .home p {
   color: #F4F4F4;
   transition: color, 0.4s, ease-in-out; }
 
-.home p:hover {
-  color: #f03235;
-  transition: color, 0.4s, ease-in-out; }
-
 .menu p {
-  color: #F4F4F4; }
-
-.menu p:hover {
-  color: #f03235;
+  color: #F4F4F4;
   transition: color, 0.4s, ease-in-out; }
 
 .contact p {
   color: #F4F4F4;
   transition: color, 0.4s, ease-in-out; }
 
-.contact p:hover {
-  color: #f03235;
+.link-blur p {
+  color: rgba(255, 255, 255, 0.2) !important;
   transition: color, 0.4s, ease-in-out; }
 
 .home-page {
@@ -95,13 +92,30 @@ a {
 
 .contact-page {
   height: 100vh;
-  background-color: #F4F4F4; }
+  background-color: #F4F4F4;
+  background: url("../img/chucksinside1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .menu-page {
   height: 100vh;
-  background: url("../img/chucksmenu.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 120vh; }
+  background-color: #ffffff;
+  text-align: center; }
+  .menu-page .menu-header {
+    margin-top: 20px;
+    text-align: center;
+    font-family: MR;
+    font-size: 50px;
+    color: #373536; }
+  .menu-page .menu-img {
+    display: inline-block;
+    bottom: 0px;
+    max-width: 1270px; }
+  .menu-page hr {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px; }
 
 /*# sourceMappingURL=sass.css.map */

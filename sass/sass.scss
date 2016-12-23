@@ -14,6 +14,10 @@ a {
   color: black;
 }
 
+.active {
+  color: $red;
+}
+
 @font-face{
   font-family: MR;
   src: url('../fonts/Montserrat-Bold.ttf');
@@ -49,9 +53,10 @@ a {
 
 .nav-link {
   font-family: MR;
-  font-size: 90%;
+  font-size: 20px;
   display: inline-block;
   padding-right: 70px;
+  cursor: pointer;
 }
 
 .home p {
@@ -59,17 +64,8 @@ a {
   transition: color, 0.4s, ease-in-out;
 }
 
-.home p:hover {
-  color: $red;
-  transition: color, 0.4s, ease-in-out;
-}
-
 .menu p {
   color: $white;
-}
-
-.menu p:hover {
-  color: $red;
   transition: color, 0.4s, ease-in-out;
 }
 
@@ -78,8 +74,8 @@ a {
   transition: color, 0.4s, ease-in-out;
 }
 
-.contact p:hover {
-  color: $red;
+.link-blur p {
+  color: rgba(255, 255, 255, 0.2) !important;
   transition: color, 0.4s, ease-in-out;
 }
 
@@ -126,13 +122,34 @@ a {
 .contact-page {
   height: 100vh;
   background-color: $white;
+  background:
+  url('../img/chucksinside1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .menu-page {
   height: 100vh;
-  background:
-  url('../img/chucksmenu.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 120vh;
+  background-color: #ffffff;
+  text-align: center;
+  .menu-header {
+    margin-top: 20px;
+    text-align: center;
+    font-family: MR;
+    font-size: 50px;
+    color: $black;
+  }
+  .menu-img {
+    display: inline-block;
+    bottom: 0px;
+    max-width: 1270px;
+  }
+
+  hr {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }

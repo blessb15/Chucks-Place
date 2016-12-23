@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
   <link href="css/sass.css" rel="stylesheet">
   <title>Chuck's Place</title>
 <head>
 <body>
 
   <div class="nav-bubbles">
-    <div class="nav-bubble-1">
+    <div class="nav-bubble-1 active">
       •
     </div>
     <div class="nav-bubble-2">
@@ -18,11 +20,12 @@
     </div>
   </div>
 
+  <a name="home"></a>
   <img src="img/chuckslogowhite.png" class="nav-logo">
   <div class="nav-links">
-    <a href="#" class="nav-link home"><p>HOME</p></a>
-    <a href="#" class="nav-link menu"><p>MENU</p></a>
-    <a href="#" class="nav-link contact"><p>CONTACT</p></a>
+    <div class="nav-link home"><p>HOME</p></div>
+    <div class="nav-link menu"><p>MENU</p></div>
+    <div class="nav-link contact"><p>CONTACT</p></div>
   </div>
 
   <div class="home-page">
@@ -39,6 +42,10 @@
   </div>
 
   <div class="menu-page">
+    <div class="menu-header">
+      - MENU -
+    </div>
+    <img class="menu-img" src="img/chucksmenu.jpg" alt="Chuck's menu" width="100%" height="87%">
   </div>
 
   <div class="contact-page">
