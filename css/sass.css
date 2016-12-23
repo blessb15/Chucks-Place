@@ -13,21 +13,25 @@ a {
 @font-face {
   font-family: Lobster;
   src: url("../fonts/Lobster-Regular.ttf"); }
-.invisible-nav {
-  padding-left: 20px;
-  padding-right: 20px;
-  z-index: 5;
-  position: relative; }
+.nav-bubbles {
+  position: fixed;
+  left: 97%;
+  top: 45%;
+  font-size: 50px;
+  color: #F4F4F4;
+  cursor: pointer; }
 
 .nav-logo {
+  position: absolute;
   margin-top: 15px;
+  margin-left: 50px;
   display: inline-block;
   width: 150px; }
 
 .nav-links {
+  position: absolute;
   margin-top: 45px;
-  float: right;
-  left: 50px; }
+  right: 0; }
 
 .nav-link {
   font-family: MR;
@@ -60,18 +64,14 @@ a {
 
 .home-page {
   z-index: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  background-color: #F4F4F4; }
-
-.home-header-img {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/chucksinside2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-position: center;
+  text-align: center; }
 
 .home-message {
   display: inline-block;
@@ -83,13 +83,25 @@ a {
   color: #F4F4F4; }
 
 .home-video {
-  display: block;
-  width: 660px;
-  float: right;
-  height: 415px;
-  margin-top: 250px;
-  margin-right: 100px;
+  display: inline-block;
+  width: 55vw;
+  max-width: 830px;
+  min-width: 350px;
+  height: 60vh;
+  margin-top: 220px;
+  margin-right: 50px;
   margin-left: 50px;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5); }
+
+.contact-page {
+  height: 100vh;
+  background-color: #F4F4F4; }
+
+.menu-page {
+  height: 100vh;
+  background: url("../img/chucksmenu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120vh; }
 
 /*# sourceMappingURL=sass.css.map */
