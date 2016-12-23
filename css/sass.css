@@ -9,46 +9,87 @@ a {
 
 @font-face {
   font-family: MR;
-  src: url("../fonts/Montserrat-Regular.ttf"); }
-.nav-bar {
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
-  position: fixed;
-  z-index: 2;
-  font-family: MR;
-  background-color: #888888;
-  color: blue;
-  width: 15%;
-  height: 100%;
-  background-color: lightgray;
-  text-align: center; }
-  .nav-bar .nav-logo {
-    margin-top: 15px;
-    display: inline-block;
-    width: 150px; }
+  src: url("../fonts/Montserrat-Bold.ttf"); }
+@font-face {
+  font-family: Lobster;
+  src: url("../fonts/Lobster-Regular.ttf"); }
+.invisible-nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 5;
+  position: relative; }
 
-.nav-home-link p {
-  margin-top: 45px; }
+.nav-logo {
+  margin-top: 15px;
+  display: inline-block;
+  width: 150px; }
+
+.nav-links {
+  margin-top: 45px;
+  float: right;
+  left: 50px; }
+
+.nav-link {
+  font-family: MR;
+  font-size: 90%;
+  display: inline-block;
+  padding-right: 70px; }
+
+.home p {
+  color: #F4F4F4;
+  transition: color, 0.4s, ease-in-out; }
+
+.home p:hover {
+  color: #f03235;
+  transition: color, 0.4s, ease-in-out; }
+
+.menu p {
+  color: #F4F4F4; }
+
+.menu p:hover {
+  color: #f03235;
+  transition: color, 0.4s, ease-in-out; }
+
+.contact p {
+  color: #F4F4F4;
+  transition: color, 0.4s, ease-in-out; }
+
+.contact p:hover {
+  color: #f03235;
+  transition: color, 0.4s, ease-in-out; }
 
 .home-page {
-  width: 85%;
+  z-index: 0;
+  width: 100%;
   height: 100%;
-  left: 15%;
   position: absolute;
-  text-align: center; }
-
-.home-header-text {
-  z-index: 5;
-  font-family: MR;
-  font-size: 70px;
-  color: white;
-  padding-top: 7%; }
+  text-align: center;
+  background-color: #F4F4F4; }
 
 .home-header-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/chucksinside1.jpg");
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/chucksinside2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 40%; }
+  height: 100vh; }
+
+.home-message {
+  display: inline-block;
+  font-family: Lobster;
+  font-size: 35px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 215px;
+  color: #F4F4F4; }
+
+.home-video {
+  display: block;
+  width: 660px;
+  float: right;
+  height: 415px;
+  margin-top: 250px;
+  margin-right: 100px;
+  margin-left: 50px;
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=sass.css.map */
