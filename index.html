@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
   <link href="css/sass.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
   <title>Chuck's Place</title>
 <head>
 <body>
@@ -53,28 +55,38 @@
         <br />
         <input type="name" name="name" placeholder="Name" class="form-input name">
         <br />
-        <textarea name="message" placeholder="Message" class="form-message" rows="10"></textarea>
+        <textarea name="message" placeholder="Message" class="form-message" rows="10"
+        width="100%"></textarea>
         <br />
         <button type="submit" class="form-send">Send</button>
       </form>
     </div>
 
     <div class="contact-map">
-
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4430823960224!2d-122.6671650840662!3d45.420568879100315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54957490a85bd01f%3A0x2573fa7276c08fc6!2sChuck&#39;s+Place!5e0!3m2!1sen!2sus!4v1483124806673" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <div class="contact-email">
-      <img src="img/emailicon.png" width="50px">
+      <img src="img/emailicon.png">
       <p>chucksplace@me.com</p>
     </div>
 
     <div class="contact-hours">
+      <div clas="hours-header">HOURS</div>
+      <hr />
+      <div class="hours">6:00AM - 2:00PM</div>
+    </div>
 
+    <div class="contact-social">
+      <div class="social-phone">(503) 675-7861</div>
+      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi7-cnI05zRAhVX92MKHcKDDfIQFggaMAA&url=https%3A%2F%2Fwww.facebook.com%2FChucksPlaceonB%2F&usg=AFQjCNFOJk2Ib8h_SEd38-AZLBRH1RjfEw&sig2=8ivasVGDrG7ny3W7P32Nww&bvm=bv.142059868,d.cGc"><div class="social-fb"></div></a>
     </div>
 
   </div>
 
   <a name="contact"></a>
+
+  <footer></footer>
 
 </body>
 </html>

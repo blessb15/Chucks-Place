@@ -31,7 +31,6 @@ $(Document).ready(function() {
 
   $(window).scroll(function(){
     var page1 = $('.home-page').height();
-    console.log(page1);
     if($(document).scrollTop() < page1){
       $('.nav-bubble-contact').removeClass('active');
       $('.nav-bubble-menu').removeClass('active');
@@ -77,5 +76,19 @@ $(Document).ready(function() {
       1000
     );
   });
+
+  $(window).resize(function(){
+	if ($(window).width() <= 767){
+		$('.nav-bubbles').hide();
+    $('.home-page').css('height', '50vh');
+    $('.home-video').css('height', '30vh');
+    $('.home-video').css('margin-top', '14vh');
+    $('.home-video').css('max-width', '1400px');
+    $('.menu-page').css('height', '50vh');
+    $('.menu-img').css('max-width', '1500px');
+    $('.contact-page').css('height', '50vh');
+    $('.contact-header').css('margin-bottom', '100px');
+	}
+});
 
 });

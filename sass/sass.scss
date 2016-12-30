@@ -157,6 +157,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .contact-header {
@@ -170,13 +171,15 @@ a {
 }
 
 .contact-form {
-  display: block;
+  display: inline-block;
   margin-left: 50px;
   text-align: left;
+  width: 40%;
+  height: 50%;
 
   form {
     display: inline-block;
-    width: 40%;
+    width: 100%;
   }
 
   .form-input {
@@ -220,11 +223,26 @@ a {
   }
 }
 
+.contact-map {
+  display: inline-block;
+  width: 40%;
+  height: 50%;
+  float: right;
+  margin-right: 50px;
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .contact-email {
     margin-left: 50px;
     margin-top: 30px;
     color: white;
     font-family: MR;
+    display: inline-block;
+    width: 40%;
     p {
       display: inline-block;
       font-size: 25px;
@@ -232,6 +250,21 @@ a {
 
     img {
       display: inline-block;
-      margin-right: 20px;
+      margin-right: 10px;
+      width: 30px;
     }
+}
+
+.contact-hours {
+  display: inline-block;
+  width: 40%;
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+  color: $white;
+  font-family: MR;
+  font-size: 25px;
+  .hours-header {
+    margin-bottom: 10px;
+  }
 }
