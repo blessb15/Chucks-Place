@@ -88,6 +88,7 @@ $(Document).ready(function() {
     $('.menu-img').css('max-width', '1500px');
     $('.contact-page').css('height', '50vh');
     $('.contact-header').css('margin-bottom', '100px');
+    $('.form-message').attr('rows', '20');
 	}
 });
 

@@ -8,6 +8,7 @@ a {
   color: black; }
 
 .active {
+  transition: color, 0.4s, ease-in-out;
   color: #f03235; }
 
 @font-face {
@@ -23,7 +24,9 @@ a {
   font-size: 50px;
   color: #F4F4F4;
   cursor: pointer;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition: color, 0.4s, ease-in-out; }
 
 .nav-logo {
   position: absolute;
@@ -62,7 +65,7 @@ a {
 
 .home-page {
   z-index: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/chucksinside2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url("../img/chucksinside2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -111,9 +114,10 @@ a {
     margin-top: 20px; }
 
 .contact-page {
+  position: absolute;
   height: 100vh;
   background-color: #F4F4F4;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/chucksinside1.jpg");
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)), url("../img/chucksinside1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,21 +187,6 @@ a {
     width: 100%;
     height: 100%; }
 
-.contact-email {
-  margin-left: 50px;
-  margin-top: 30px;
-  color: white;
-  font-family: MR;
-  display: inline-block;
-  width: 40%; }
-  .contact-email p {
-    display: inline-block;
-    font-size: 25px; }
-  .contact-email img {
-    display: inline-block;
-    margin-right: 10px;
-    width: 30px; }
-
 .contact-hours {
   display: inline-block;
   width: 40%;
@@ -206,8 +195,57 @@ a {
   margin-top: 30px;
   color: #F4F4F4;
   font-family: MR;
-  font-size: 25px; }
+  font-size: 15px; }
   .contact-hours .hours-header {
     margin-bottom: 10px; }
+
+.contact-social {
+  margin-top: 20px;
+  margin-left: 50px;
+  display: inline-block;
+  font-family: MR;
+  font-size: 13px;
+  color: #F4F4F4;
+  text-align: left; }
+  .contact-social .social-email {
+    display: inline-block;
+    margin-right: 20px; }
+    .contact-social .social-email .mail {
+      width: 30px;
+      padding-right: 15px;
+      position: relative;
+      top: 2px; }
+  .contact-social .social-phone {
+    display: inline-block;
+    margin-right: 20px; }
+    .contact-social .social-phone .phone {
+      width: 20px;
+      padding-right: 20px;
+      position: relative;
+      top: 7px; }
+  .contact-social .social-fb {
+    margin-top: 20px;
+    color: #F4F4F4;
+    display: inline-block; }
+    .contact-social .social-fb .fb {
+      width: 25px;
+      padding-right: 10px;
+      position: relative;
+      top: 2px; }
+
+.footer {
+  text-align: center;
+  font-family: MR;
+  font-size: 15px;
+  color: #888888;
+  width: 100%;
+  bottom: 10px;
+  position: absolute; }
+  .footer .footer-copywrite a {
+    color: #888888 !important;
+    transition: color, 0.4s, ease-in-out; }
+  .footer .footer-copywrite a:hover {
+    color: #F4F4F4 !important;
+    transition: color, 0.4s, ease-in-out; }
 
 /*# sourceMappingURL=sass.css.map */

@@ -15,6 +15,7 @@ a {
 }
 
 .active {
+  transition: color, 0.4s, ease-in-out;
   color: $red;
 }
 
@@ -36,6 +37,8 @@ a {
   color: $white;
   cursor: pointer;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition: color, 0.4s, ease-in-out;
 }
 
 .nav-logo {
@@ -84,8 +87,8 @@ a {
   z-index: 0;
   background:
   linear-gradient(
-    rgba(0,0,0,0.4),
-    rgba(0,0,0,0.4)
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.0)
   ),
   url('../img/chucksinside2.jpg');
   background-repeat: no-repeat;
@@ -145,12 +148,13 @@ a {
 }
 
 .contact-page {
+  position: absolute;
   height: 100vh;
   background-color: $white;
   background:
   linear-gradient(
-  rgba(0,0,0,0.3),
-  rgba(0,0,0,0.3)
+  rgba(0,0,0,0.0),
+  rgba(0,0,0,0.7)
   ),
   url('../img/chucksinside1.jpg');
   background-position: center;
@@ -236,25 +240,6 @@ a {
   }
 }
 
-.contact-email {
-    margin-left: 50px;
-    margin-top: 30px;
-    color: white;
-    font-family: MR;
-    display: inline-block;
-    width: 40%;
-    p {
-      display: inline-block;
-      font-size: 25px;
-    }
-
-    img {
-      display: inline-block;
-      margin-right: 10px;
-      width: 30px;
-    }
-}
-
 .contact-hours {
   display: inline-block;
   width: 40%;
@@ -263,8 +248,68 @@ a {
   margin-top: 30px;
   color: $white;
   font-family: MR;
-  font-size: 25px;
+  font-size: 15px;
   .hours-header {
     margin-bottom: 10px;
+  }
+}
+
+.contact-social {
+  margin-top: 20px;
+  margin-left: 50px;
+  display: inline-block;;
+  font-family: MR;
+  font-size: 13px;
+  color: $white;
+  text-align: left;
+  .social-email {
+    display: inline-block;
+    margin-right: 20px;
+    .mail {
+      width: 30px;
+      padding-right: 15px;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .social-phone {
+    display: inline-block;
+    margin-right: 20px;
+    .phone {
+      width: 20px;
+      padding-right: 20px;
+      position: relative;
+      top: 7px;
+    }
+  }
+  .social-fb {
+    margin-top: 20px;
+    color: $white;
+    display: inline-block;
+    .fb {
+      width: 25px;
+      padding-right: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  font-family: MR;
+  font-size: 15px;
+  color: $gray;
+  width: 100%;
+  bottom: 10px;
+  position: absolute;
+  .footer-copywrite a {
+    color: $gray !important;
+    transition: color, 0.4s, ease-in-out;
+  }
+
+  .footer-copywrite a:hover {
+    color: $white !important;
+    transition: color, 0.4s, ease-in-out;
   }
 }
