@@ -40,7 +40,7 @@ $(Document).ready(function() {
       $('.nav-bubble-home').removeClass('active');
       $('.nav-bubble-menu').addClass('active');
     }
-    if ($(document).scrollTop() == $(document).height() - page1){
+    if ($(document).scrollTop() == Math.round(page1 * 2)){
       $('.nav-bubble-menu').removeClass('active');
       $('.nav-bubble-home').removeClass('active');
       $('.nav-bubble-contact').addClass('active');
@@ -50,7 +50,6 @@ $(Document).ready(function() {
   $('.home, .nav-bubble-home').click(function(e){
     e.preventDefault();
     var page = 0;
-    var target = $('a[name="home"]').offset().top;
     $('body, html').animate(
       {scrollTop: page},
       1000
@@ -59,8 +58,7 @@ $(Document).ready(function() {
 
   $('.menu, .nav-bubble-menu').click(function(e){
     e.preventDefault();
-    var page = $('.menu-page').height();
-    var target = $('a[name="menu"]').offset().top;
+    var page = $('.home-page').height() + 1;
     $('body, html').animate(
       {scrollTop: page},
       1000
@@ -69,8 +67,7 @@ $(Document).ready(function() {
 
   $('.contact, .nav-bubble-contact').click(function(e){
     e.preventDefault();
-    var page = $('.contact-page').height() * 2;
-    var target = $('a[name="contact"]').offset().top;
+    var page = Math.round($('.home-page').height() * 2);
     $('body, html').animate(
       {scrollTop: page},
       1000
@@ -78,18 +75,18 @@ $(Document).ready(function() {
   });
 
   $(window).resize(function(){
-	if ($(window).width() <= 767){
-		$('.nav-bubbles').hide();
-    $('.home-page').css('height', '50vh');
-    $('.home-video').css('height', '30vh');
-    $('.home-video').css('margin-top', '14vh');
-    $('.home-video').css('max-width', '1400px');
-    $('.menu-page').css('height', '50vh');
-    $('.menu-img').css('max-width', '1500px');
-    $('.contact-page').css('height', '50vh');
-    $('.contact-header').css('margin-bottom', '100px');
-    $('.form-message').attr('rows', '20');
-	}
-});
+  	if ($(window).width() <= 767){
+  		$('.nav-bubbles').hide();
+      $('.home-page').css('height', '50vh');
+      $('.home-video').css('height', '30vh');
+      $('.home-video').css('margin-top', '14vh');
+      $('.home-video').css('max-width', '1400px');
+      $('.menu-page').css('height', '50vh');
+      $('.menu-img').css('max-width', '1500px');
+      $('.contact-page').css('height', '50vh');
+      $('.contact-header').css('margin-bottom', '100px');
+      $('.form-message').attr('rows', '20');
+  	}
+  });
 
 });
